@@ -12,54 +12,68 @@ var nome_do_carro = "fusca";
 
 alert(nome_do_carro);
 
-// Exercicio 2
-var nome = prompt("Qual é o seu nome?")
-// Exercicio 3
-var idade = prompt("Qual é a sua idade?")
+// Exercicio 2 e 3
+var nome = prompt("Qual é o seu nome?");
 
-alert("olá " + nome + ", sua idade é " + idade)
+var idade = prompt("Qual é a sua idade?");
+
+alert("olá " + nome + ", sua idade é " + idade);
 
 // Exercicio 4
-var base = prompt("Escreva o valor da base do retângulo:")
+var base = prompt("Escreva o valor da base do retângulo:");
 
-var altura = prompt("Escreva o valor da altura do retângulo")
+var altura = prompt("Escreva o valor da altura do retângulo");
 
-var resultado = (base * altura)
+var resultado = (base * altura);
 
-alert("A área de seu retangulo é " + resultado)
-
-
-var lado_quadrado = prompt("Insira o valor dos lados que o seu quadrado irá ter:")
-
-var result = (lado_quadrado * lado_quadrado)
-
-alert("O valor da área do seu quadrado é " + result)
+alert("A área de seu retangulo é " + resultado);
 
 
-var diagonal_maior = prompt("Insira o valor da diagonal maior:")
+var lado_quadrado = prompt("Insira o valor dos lados que o seu quadrado irá ter:");
 
-var diagonal_menor = prompt("Insira o valor da diagonal menor:")
+var result = (lado_quadrado * lado_quadrado);
 
-var resultado_losango = (diagonal_maior * diagonal_menor / 2)
-
-alert("A área do losango é " + resultado_losango)
+alert("O valor da área do seu quadrado é " + result);
 
 
-var base_paralelo = prompt("Escreva o valor da base do paralelogramo:")
+var diagonal_maior = prompt("Insira o valor da diagonal maior de seu losango:");
 
-var altura_paralelo = prompt("Escreva o valor da altura do paralelogramo")
+var diagonal_menor = prompt("Insira o valor da diagonal menor de seu losango:");
 
-var resultado_paralelo = (base_paralelo * altura_paralelo)
+var resultado_losango = (diagonal_maior * diagonal_menor / 2);
 
-alert("A área de seu retangulo é " + resultado_paralelo)
+alert("A área do losango é " + resultado_losango);
 
 
-var base_tri = prompt("Insira o valor da base do triângulo:")
+var base_maior = prompt("Insira o valor da base maior de seu trapésio:");
 
-var altura_tri = prompt("Insira o valor da daltura do triângulo:")
+var base_menor = prompt("Insira o valor da base menor de seu trapésio:");
 
-var resultado_tri = (base_tri * altura_tri / 2)
+var h = prompt("insira o valor da altura de seu trapésio:");
 
-alert("A área do triangulo é " + resultado_tri)
+var resultado_trapé = (base_maior + base_menor * h / 2)
+
+alert("A área do trapésio é " + resultado_trapé)
+
+
+var base_paralelo = prompt("Escreva o valor da base do paralelogramo:");
+
+var altura_paralelo = prompt("Escreva o valor da altura do paralelogramo");
+
+var resultado_paralelo = (base_paralelo * altura_paralelo);
+
+alert("A área de seu retangulo é " + resultado_paralelo);
+
+
+var base_tri = prompt("Insira o valor da base do triângulo:");
+
+var altura_tri = prompt("Insira o valor da daltura do triângulo:");
+
+var resultado_tri = (base_tri * altura_tri / 2);
+
+alert("A área do triangulo é " + resultado_tri);
+
+
+
 
 </script>
