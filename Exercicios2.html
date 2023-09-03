@@ -9,44 +9,44 @@
 <script>
 
 // Exercicio 1
-var numero_1 = prompt("Insira o primeiro número:")
+var numero_1 = prompt("Insira o primeiro número:");
 
-var numero_2 = prompt("Insira o segundo número:")
+var numero_2 = prompt("Insira o segundo número:");
 
 if (numero_1 > numero_2) {
-    alert ("O maior número é " + numero_1)
+    alert ("O maior número é " + numero_1);
 } else if (numero_1 < numero_2) {
-    alert ("O maior número é " + numero_2)
+    alert ("O maior número é " + numero_2);
 } else {
-    alert ("Nenhum é maior")
+    alert ("Nenhum é maior");
 }
 
 
 // Exercicio 2
-var numero = prompt("Insira um número:")
+var numero = prompt("Insira um número:");
 
 if (numero < 0) {
-    alert ("O número é negativo.")
+    alert ("O número é negativo.");
 } else if (numero == 0) {
-    alert ("O número é neutro.")
+    alert ("O número é neutro.");
 } else {
-    alert ("O número é positivo.")
+    alert ("O número é positivo.");
 }
 
 
 // Exercicio 3
-var valor_1 = prompt("Insira um número:")
+var valor_1 = prompt("Insira um número:");
 
-var valor_2 = prompt("Insira outro número:")
+var valor_2 = prompt("Insira outro número:");
 
-var valor_3 = prompt("Insira mais um número:")
+var valor_3 = prompt("Insira mais um número:");
 
 if (valor_2,valor_3 < valor_1) {
-    alert ("O maior número é o " + valor_1)
+    alert ("O maior número é o " + valor_1);
 } else if (valor_1,valor_3 < valor_2) {
-    alert ("O maior número é o " + valor_2)
+    alert ("O maior número é o " + valor_2);
 } else {
-    alert ("O maior número é o " + valor_3)
+    alert ("O maior número é o " + valor_3);
 }
 
 
@@ -58,13 +58,13 @@ var valorr_1 = parseInt(prompt("Escreva um valor:"));
 
     if (valorr_3 < valorr_1 && valorr_3 < valorr_2) {
         var result_1 = valorr_1 + valorr_2
-        alert("O valor da soma dos dois numeros maiores é " + result_1)
+        alert("O valor da soma dos dois numeros maiores é " + result_1);
     } else if (valorr_2 < valorr_1 && valorr_2 < valorr_3) {
         var result_2 = valorr_1 + valorr_3
-        alert("O valor da soma dos dois numeros maiores é " + result_2)
+        alert("O valor da soma dos dois numeros maiores é " + result_2);
     } else {
         var result_3 = valorr_2 + valorr_3
-        alert("O valor da soma dos dois numeros maiores é " + result_3)
+        alert("O valor da soma dos dois numeros maiores é " + result_3);
     }
 
 
@@ -107,7 +107,96 @@ var valorr_1 = parseInt(prompt("Escreva um valor:"));
     var valur_4 = parseInt(prompt("Insira outro valor:"));
     var valur_5 = parseInt(prompt("Insira outro valor:"));
     var valur_6 = parseInt(prompt("Insira outro valor:"));
+    var soma = (0)
+
+    if (valur_1 < 72) {
+        soma = soma + valur_1
+    } if (valur_2 < 72) {
+        soma = soma + valur_2
+    } if (valur_3 < 72) {
+        soma = soma + valur_3
+    } if (valur_4 < 72) {
+        soma = soma + valur_4
+    } if (valur_5 < 72) {
+        soma = soma + valur_5
+    } if (valur_6 < 72) {
+        soma = soma + valur_6
+    } 
+
+    alert("O valor total dos números abaixo de 72 é " + soma);
+
+
+//Exercicio 8
+//Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de "tente novamente"
+    var valar_1 = parseInt(prompt("Insira um valor:"));
+    var valar_2 = parseInt(prompt("Insira outro valor:"));
+    var valar_3 = parseInt(prompt("Insira outro valor:"));
+    var valar_4 = parseInt(prompt("Insira outro valor:"));
+    var média = 0;
+
+    if (valar_1 > 0 && valar_1 < 10 && valar_2 > 0 && valar_2 < 10 && valar_3 > 0 && valar_3 < 10 && valar_4 > 0 && valar_4 < 10) {
+        média = valar_1 + valar_2 + valar_3 + valar_4 / 4 
+        if (média >= 5) {
+        alert("você passou no teste!");
+        } else {
+        alert("tente novamente.");
+    } } else {
+        alert("Os valores devem ser maiores que 0 e menores que 10");
+    }
 
     
+
+    //Exercicio 9
+    //Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+    var ano_nascimento = parseInt(prompt("Insira seu ano de nascimento:"));
+
+    if (ano_nascimento <= 2005) {
+        alert ("Você poderá votar este ano");
+    } else {
+        alert ("Você não poderá votar esse ano");
+    }
+
+
+    //Exercicio 10
+    //Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1: feminino 2: masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas:
+    var altura = parseFloat(prompt("Insira sua altura aqui:"));
+    var genero = (prompt("insira seu gênero aqui:"));
+
+    if (genero == "masculino") {
+        var result_masc = 72.7 * altura - 58
+        document.write("Seu peso ideal é " + result_masc);
+    } else if (genero == "feminino") {
+        var result_fem = 72.7 * altura - 58
+        document.write("Seu peso ideal é " + result_fem);
+    } else {
+        document.write("Algum dos valores está invalido.");
+    }
+
+
+    //Exercicio 11
+    /* Uma micro calculadora
+    Escreva um programa para ler 2 valores inteiros informados pelo usuário e uma das seguintes operações a serem executadas (codificada da seguinte forma: 1. Adição, 2. Subtração, 3. Divisão, 4. Multiplicação).
+    O programa deve calcular e escrever o resultado dessa operação sobre os dois valores lidos. */
+    var numero_1 = parseInt(prompt("Insira o primeiro valor do cálculo:"));
+    var operacao = prompt("Insira a operação do calculo, '+' para soma, '-' para subtração, '*' para multiplicação e '/' para divisão.");
+    var numero_2 = parseInt(prompt("Insira o segundo valor do cálculo:"));
+    var resultados 
+
+    if (operacao == "+") {
+        var resultados = (numero_1 + numero_2);
+        alert (numero_1 + " + " + numero_2 + " = " + resultados);
+    } else if (operacao == "-") {
+        var resultados = (numero_1 - numero_2);
+        alert (numero_1 + " - " + numero_2 + " = " + resultados);
+    } else if (operacao == "*") {
+        var resultados = (numero_1 * numero_2);
+        alert (numero_1 + " * " + numero_2 + " = " + resultados);
+    } else if (operacao == "/") {
+        var resultados = (numero_1 / numero_2);
+        alert (numero_1 + " / " + numero_2 + " = " + resultados);
+    } else {
+        alert ("A operação inserida não é válida.")
+    }
+
 
 </script>
