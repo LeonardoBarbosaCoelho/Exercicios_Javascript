@@ -206,10 +206,14 @@
     //Exercicio 10
     //Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário.
 
-    var decisao = prompt("insira o número da tabuada que deseja")
+    var decisao = parseInt(prompt("Insira um número"));
 
-    if (decisao > 0) {
-        
+    for (var tabs = 1; tabs <= decisao; tabs++){
+        document.write (`<h1> TABUADA  ${tabs} </h1>`)
+        for (var tabuada = 0; tabuada <= 10; tabuada++){
+            var result = tabs * tabuada
+                document.write (`<p> ${tabs} * ${tabuada} = ${result} </p>`)
+        }
     }
 
     </script>
