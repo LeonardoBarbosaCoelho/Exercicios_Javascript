@@ -9,7 +9,7 @@
     <script>
         //Exercicio 1
         //Escreva um algoritmo para ler 2 valores informados pelo usuário e se o segundo valor informado for igual ou menor que ZERO, deve ser lido um novo valor. Ou seja, para o segundo valor não pode ser aceito o valor zero, nem um valor negativo.  O seu programa deve imprimir o resultado da divisão do primeiro valor lido pelo segundo valor.
-/*
+
         var valor_1 = parseInt(prompt("Insira o primeiro valor para a conta de divisão"))
         var valor_2 = parseInt(prompt("Insira o segundo número para a conta de divisão"))
 
@@ -21,7 +21,7 @@
             var divisao = parseInt(valor_1 / valor_2);
             alert (valor_1 + " / " + valor_2 + " = " + divisao);
         }
-*/
+
 
     //Exercicio 2
     //Crie uma bomba relógio (usando somente código - para deixar claro!) cuja contagem regressiva vá de 30 a 0. Utilize "document.write" para escrever em tela e no final da repetição escreva "EXPLOSÃO".
@@ -205,8 +205,8 @@
 
     //Exercicio 10
     //Escreva um programa para imprimir todas as tabuadas de 1 a N. N será informado pelo usuário.
-
-    var decisao = parseInt(prompt("Insira um número"));
+/*
+    var decisao = parseInt(prompt("Insira o numero desejado de tabuadas desejadas"));
 
     for (var tabs = 1; tabs <= decisao; tabs++){
         document.write (`<h1> TABUADA  ${tabs} </h1>`)
@@ -215,7 +215,24 @@
                 document.write (`<p> ${tabs} * ${tabuada} = ${result} </p>`)
         }
     }
+*/
 
+    //Exercicio 11
+    //Escreva um programa em que o usuário informe 10 valores e escreva quantos desses valores lidos estão entre os números 24 e 42 (incluindo os valores 24 e 42) e quantos deles estão fora deste intervalo.
+/*
+    var num_dentro = []
+    var num_fora = []
+
+    for (var num_inicial = 1; num_inicial <= 10; num_inicial++){
+        var numeros = parseInt(prompt("Digite 10 valores aleatórios"));
+        if (numeros >= 24 && numeros <= 42){
+            num_dentro.push(" " + numeros)
+        } else {
+            num_fora.push(" " + numeros)
+        }
+    }
+        document.write(`Os valores que estão dentro de 24 e 42 são ${num_dentro} e os que não são ${num_fora}`)
+*/
     </script>
 </body>
 </html>
